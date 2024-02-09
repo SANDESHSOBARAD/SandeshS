@@ -29,7 +29,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="ri-home-4-line"></i>
                                 HOME
                             </a>
@@ -73,7 +73,7 @@
                 </div>
 
                     <div class="nav__buttons">
-                        <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                        <i class="ri-moon-fill change-theme" id="theme-button"></i>
 
                         <div class="nav__toggle" id="nav-toggle">
                             <i class="ri-menu-line"></i>
@@ -712,17 +712,95 @@
 
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
-                
+                <h2 class="section__title">CONTACT ME</h2>
+                <span class="section__subtitle">Let's get in touch</span>
+
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-message-3-fill"></i> Talk to me
+                        </h3>
+
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <span class="contact__data-title">Email</span>
+                                <span class="contact__data-info">sobaradsandesh@gmail.com</span>
+                            </div>
+
+                            <div class="contact__data">
+                                <span class="contact__data-title">Phone</span>
+                                <span class="contact__data-info">+1 530-715-5523</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-mail-send-fill"></i>Shoot me an email!
+                        </h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Name</label>
+                                <input type="text" name="user_name" required placeholder="Enter your Name" class="contact__form-input" id="contact-name"></input>
+                            </div>
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Email</label>
+                                <input type="text" name="user_email" required placeholder="Enter your Email" class="contact__form-input" id="contact-email"></input>
+                            </div>
+                            <div class="contact__form-div contact__form-area">
+                                <label class="contact__form-tag">Feedback</label>
+                                <textarea name="user_feedback" placeholder="Write your feedback..." id="contact-feedback" class="contact__form-input"></textarea>
+                            </div>
+
+                            <p class="contact__message" id="contact-message"></p>
+
+                            <button type="submit" class="contact__button">
+                                Submit <i class="ri-send-plane-fill"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            
+            <div class="footer__container container">
+                <h1 class="footer__title">Sandesh Sobarad</h1>
+                <p>Software Engineer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">PROJECTS</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/sandesh-sobarad/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="https://github.com/SANDESHSOBARAD" target="_blank" class="footer__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sandesh_sobarad/?img_index=1" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </ul>
+
+            </div>
         </footer>
 
 
         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
         
 
         <!--=============== SCROLLREVEAL ===============-->
@@ -732,6 +810,10 @@
         <script src="assets/js/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
         
 
         <!--=============== MAIN JS ===============-->
